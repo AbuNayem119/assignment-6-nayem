@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - 6</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+    <!-- Font Family: Lato, Inter -->
+    <style>
+        .lato {
+            font-family: "Lato";
+        }
+
+        .inter {
+            font-family: "Inter";
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <section class="w-[1600px] mx-auto">
+
+        <!-- Header section start here -->
+        <header class="w-[1320px] mx-auto flex justify-between items-center py-10">
+            <div class="flex gap-4">
+                <img class="w-8 h-8" src="./assets/img/logo.webp" alt="">
+                <h2 class="text-4xl font-extrabold lato">Peddy</h2>
+            </div>
+            <div>
+                <ul class="flex gap-8">
+                    <li class="text-xl font-semibold text-[#131313]">Home</li>
+                    <li class="text-xl font-semibold text-[#131313]">Shop</li>
+                    <li class="text-xl font-semibold text-[#131313]">Contact</li>
+                </ul>
+            </div>
+            <div class="p-2 rounded-full border border-[#0e7a8133]">
+                <img class="w-[30px] h-[30px]" src="./assets/img/user.png" alt="">
+            </div>
+        </header>
+
+
+        <!-- Banner section here -->
+        <section class="w-[752px] mx-auto flex flex-col gap-10 items-center mt-10">
+            <div class="flex gap-2 items-center">
+                <p class="text-2xl font-bold lato">Bringing Families Together</p>
+                <img class="w-7" src="./assets/img/campfire.png" alt="">
+            </div>
+            <h2 class="text-6xl font-extrabold text-center lato">Your Path to Adoption Starts Here</h2>
+            <p class="text-center text-[20px] lato">Adopting a pet is a rewarding journey, and we’re here to help you every step of the way. Explore our available pets, learn about the process, and start your path to finding a loyal companion who’s waiting for their forever home.</p>
+            <a class=" bg-[#0E7A81] text-xl text-white lato py-4 px-8 rounded-xl lato" href="">View More</a>
+        </section>
+
+        <!-- Banner img section here -->
+        <section class="mt-10 w-[1320px] mx-auto">
+            <img class="w-[75%] mx-auto" src="./assets/img/pet.webp" alt="">
+        </section>
+
+        <!-- Pet section here -->
+        <section class="w-[800px] mx-auto flex flex-col gap-6 items-center my-10">
+            <h3 class="text-[40px] font-extrabold lato">Adopt Your Best Friend</h3>
+            <p class="text-center text-[20px] lato mb-5">Adopt a pet and gain a loyal companion for life. Our shelter is filled with loving animals waiting for a forever home. Start your journey today and discover the joy of having a best friend by your side!</p>
+        </section>
+
+        <!-- Pet category buttons section here -->
+        <section id="categories-container" class="w-[1320px] mx-auto my-10 flex justify-between">
+
+            <!-- <div class="w-1/5">
+                    <div onclick="displayCategoryData()" class="flex gap-2 items-center cursor-pointer justify-center p-8 rounded-xl border border-[#0e7a8126]">
+                        <img src="./assets/img/logo.webp" alt="">
+                        <h4 class="font-bold inter text-2xl text-[#131313]">Dogs</h4>
+                    </div>
+                </div> -->
+
+        </section>
+
+        <!-- Pet cards top section here -->
+        <section class="w-[1320px] mx-auto flex justify-between items-center my-10">
+            <h4 class="font-bold lato text-2xl text-[#131313]">Best Deal For you</h4>
+            <button id="sortByPrice" class=" bg-[#0E7A81] text-xl text-white lato py-4 px-8 rounded-xl lato">Sort by Price</button>
+        </section>
+
+        <!-- Pet cards section here -->
+        <section class="w-[1320px] mx-auto my-14 flex justify-between gap-5">
+
+            <!-- Loading Spinner -->
+            <div class="mx-auto">
+                <span id="loading-spinner" class="loading loading-spinner loading-lg text-[#0e7a81] hidden"></span>
+            </div>
+
+            <!-- Dynamic Cards Container / Section here -->
+            <div id="cards-container" class="grid grid-cols-3 gap-5 w-3/4">
+
+                <!-- Cards -->
+                <!-- <div class="flex flex-col gap-2 border border-[#0e7a8126] p-4 rounded-xl">
+                        <div class="border border-[#0e7a8126] p-4 rounded-xl">
+                            <img src="./assets/img/pet.webp" alt="">
+                        </div>
+                        <div>
+                            <h4 class="font-bold inter text-xl text-[#131313]">Mister Tartosh</h4>
+                            <div class="flex gap-2 items-center">
+                                <img class="w-4 h-4"
+                                    src="https://img.icons8.com/?size=100&id=115242&format=png&color=000000" alt="">
+                                <p>Breed: Golder retriever</p>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <img class="w-4 h-4"
+                                    src="https://img.icons8.com/?size=100&id=OvwpRvZSWbGM&format=png&color=000000"
+                                    alt="">
+                                <p>Birth: 2024</p>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <img class="w-4 h-4"
+                                    src="https://img.icons8.com/?size=100&id=16275&format=png&color=000000" alt="">
+                                <p>Gender: Female</p>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <img class="w-4 h-4"
+                                    src="https://img.icons8.com/?size=100&id=58437&format=png&color=000000" alt="">
+                                <p>Price : 199$</p>
+                            </div>
+
+                        </div>
+                        <div class="flex justify-between pt-6 border-t border-[#0e7a8126]">
+                            <div
+                                class="flex items-center border border-[#0e7a8126] py-1 px-4 rounded-lg cursor-pointer">
+                                <img class="w-5 h-5"
+                                    src="https://img.icons8.com/?size=100&id=SVZUo0RhRuHJ&format=png&color=000000"
+                                    alt="">
+                            </div>
+                            <div
+                                class="flex items-center border border-[#0e7a8126] py-1 px-4 rounded-lg cursor-pointer">
+                                <a class="lato text-[18px] text-[#0E7A81] font-bold" href="">Adopt</a>
+                            </div>
+                            <div
+                                class="flex items-center border border-[#0e7a8126] py-1 px-4 rounded-lg cursor-pointer">
+                                <a class="lato text-[18px] text-[#0E7A81] font-bold" href="">Details</a>
+                            </div>
+                        </div>
+                    </div> -->
+
+            </div>
+
+            <!-- pet gallery section here  -->
+            <div id="petGallery" class="w-1/4 border border-[#0e7a8126] p-3 rounded-xl">
+                <div id="petGalleryContainer" class="grid grid-cols-2 gap-3">
+
+                    <!-- <img class="w-full object-cover border border-[#0e7a8126] p-4 rounded-xl" src="./assets/img/pet.webp" alt=""> -->
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Footer Section is here -->
+        <footer class="bg-[#2E2E2E] text-white flex justify-between items-start py-[100px] px-[140px]">
+            <div>
+                <div class="flex gap-3 my-5">
+                    <img class="w-8 h-8" src="./assets/img/logo.webp" alt="">
+                    <h2 class="text-4xl font-extrabold lato">Peddy</h2>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <p class="text-xl text-[#ffffff99] lato">Location: av. Washington 165, NY CA 54003</p>
+                    <p class="text-xl text-[#ffffff99] lato">Phone: +31859644725</p>
+                    <p class="text-xl text-[#ffffff99] lato">Email: info@yourdomain.com</p>
+                    <p class="text-xl text-[#ffffff99] lato">Openings hours: 9.00 AM - 5.00 PM</p>
+                </div>
+                <div class="flex gap-2 items-center mt-5">
+                    <img class="w-12 h-12 cursor-pointer"
+                        src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="">
+                    <img class="w-12 h-12 cursor-pointer"
+                        src="https://img.icons8.com/?size=100&id=yoQabS8l0qpr&format=png&color=000000" alt="">
+                    <img class="w-12 h-12 cursor-pointer"
+                        src="https://img.icons8.com/?size=100&id=19318&format=png&color=000000" alt="">
+                    <img class="w-12 h-12 cursor-pointer"
+                        src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="">
+                </div>
+            </div>
+
+            <div>
+                <p class="text-2xl font-bold mb-5">Useful Links</p>
+                <ul class="flex flex-col gap-2">
+                    <li class="text-xl text-[#ffffff99] lato"><a href="">Home</a></li>
+                    <li class="text-xl text-[#ffffff99] lato"><a href="">About Us</a></li>
+                    <li class="text-xl text-[#ffffff99] lato"><a href="">Animals</a></li>
+                    <li class="text-xl text-[#ffffff99] lato"><a href="">Foundation</a></li>
+                    <li class="text-xl text-[#ffffff99] lato"><a href="">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="w-[240px]">
+                <p class="text-2xl font-bold mb-5">Drop a Message</p>
+                <input type="text" placeholder="Enter your email"
+                    class="input input-bordered inter text-base bg-[#1F1F1F] w-full max-w-xs p-7" />
+                <a class="btn bg-[#0E7A81] hover:bg-[#0E7A81] border-none w-full mt-5 lato text-[28px] text-white"
+                    href="">Subscribe</a>
+            </div>
+        </footer>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- Pet Details Modal Section (Start) -->
+    <!-- You can open the modal using ID.showModal() method -->
+    <button class="btn hidden" onclick="my_modal_4.showModal()">open modal</button>
+    <dialog id="my_modal_4" class="modal">
+
+        <div class="modal-box w-5/12 max-w-5xl">
+
+            <!-- Own Content here -->
+            <div id="petDetailsContainer" class="flex flex-col gap-4 ">
+                <div class="flex items-center border border-[#0e7a8126] rounded-xl pb-4">
+                    <img class="w-full h-80 rounded-xl object-cover" src="./assets/img/pet.webp" alt="">
+                </div>
+                <div class="flex flex-col gap-6">
+                    <h4 class="font-bold lato text-3xl text-[#131313]">${pet.pet_name}</h4>
+                    <div class="flex gap-16">
+                        <div class="flex flex-col gap-2">
+                            <div class="flex gap-2 items-center">
+                                <img class="w-4 h-4"
+                                    src="https://img.icons8.com/?size=100&id=115242&format=png&color=000000" alt="">
+                                <p>Breed: ${pet.breed}</p>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <img class="w-4 h-4"
+                                    src="https://img.icons8.com/?size=100&id=16275&format=png&color=000000" alt="">
+                                <p class="lato">Gender: ${pet.gender}</p>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <img class="w-4 h-4"
+                                    src="https://img.icons8.com/?size=100&id=16275&format=png&color=000000" alt="">
+                                <p>Vaccinated status: Partially</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="flex gap-2 items-center">
+                                <img class="w-4 h-4"
+                                    src="https://img.icons8.com/?size=100&id=OvwpRvZSWbGM&format=png&color=000000"
+                                    alt="">
+                                <p>Birth: ${pet.date_of_birth}</p>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <img class="w-4 h-4"
+                                    src="https://img.icons8.com/?size=100&id=58437&format=png&color=000000" alt="">
+                                <p>Price : ${pet.price}$</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h3 class="font-bold inter text-2xl text-[#131313]">Details Information</h3>
+                    <p class="text-start inter text-xl">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using is that it has a more-or-less normal distribution of letters, as opposed to using.</p>
+                </div>
+            </div>
+
+
+            <div class="modal-action justify-center py-3 ">
+                <form method="dialog" class="contents ">
+                    <!-- if there is a button, it will close the modal -->
+                    <button
+                        class="text-xl font-bold text-[#0E7A81] w-full bg-[#0e7a811a] p-4 rounded-xl border-none">Close</button>
+                </form>
+            </div>
+
+    </dialog>
+
+
+
+    <!-- Adopt Modal Section (Start) -->
+    <!-- onclick="my_modal_1.showModal()" -->
+    <dialog id="my_modal_1" class="modal">
+        <div class="modal-box">
+            <p class="py-2 text-center text-6xl">🤝</p>
+            <h3 class="text-4xl py-3 text-center font-bold">Congrates</h3>
+            <p class="py-2 text-center text-[20px] font-bold">Adoption Process is Start For Your Friend</p>
+            <h3 id="modalCountdown" class="py-2 text-center font-bold text-8xl">3</h3>
+            <div class="modal-action justify-center">
+                <form method="dialog">
+                    <button id="modalCloseBtn" class="btn text-center font-bold hidden">Close Confirmation</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
