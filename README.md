@@ -7,6 +7,14 @@ Welcome to the **Pet Adoption Platform**—your one-stop solution to finding and
 ## 🌍 Live Demo
 [Experience it from live](https://abunayem119.github.io/assignment-6-nayem/)
 
+## 📋 Table of Contents
+- [Project Overview](#project-overview)
+- [Key Highlights](#key-highlights)
+- [Best Features](#best-features)
+- [Technology Stack](#technology-stack)
+- [Features In-Depth](#features-in-depth)
+- [ES6 Features](#es6-features)
+
 ## 🚀 Project Overview
 
 This project offers a fully functional, responsive website for pet adoption, integrating real-time data from an external API. Users can view pets in different categories, sort them by price, like pets, and adopt them with a fun and interactive process.
@@ -17,7 +25,7 @@ This project offers a fully functional, responsive website for pet adoption, int
 - **Sort by Price**: Easily sort pets by price to find your perfect match.
 - **Like & Adopt**: Save your favorite pets, and adopt with a single click.
 
-## 🔑 Features
+## 🔑 Best Features
 
 - **Responsive Navbar**: Fully responsive navigation, collapses into a mobile-friendly menu.
 - **Dynamic Categories**: Displays pets in different categories fetched from an API.
@@ -48,7 +56,7 @@ This project offers a fully functional, responsive website for pet adoption, int
 - **Async/Await**: Handles asynchronous API calls and manages dynamic data fetching.
 - **Template Literals**: Makes it easy to inject API data directly into HTML elements.
 
-
+##
 The **Pet Adoption Platform** is a feature-rich, dynamic, and user-friendly web application designed to provide an enjoyable experience for users looking to adopt pets. From browsing available pets, sorting by price, favoriting, and viewing detailed information, to adopting pets with a smooth countdown process, this platform combines intuitive design and functionality. Fully responsive and API-driven, it ensures seamless performance across all devices.
 
 By following the Figma design closely and incorporating best practices in web development, this project delivers a polished and professional solution that makes the pet adoption process interactive and engaging. Feel free to explore, contribute, or adapt the codebase for your own projects!
