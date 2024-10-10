@@ -1,6 +1,5 @@
-# Creating a new README.md file with the alternative content provided
 
-alternative_readme_content = """
+
 # 🐶 Pet Adoption Platform
 
 Welcome to the **Pet Adoption Platform**—your one-stop solution to finding and adopting your next furry friend! Browse through dynamic listings, select your favorites, and start the adoption journey, all from a sleek, responsive interface.
@@ -34,33 +33,6 @@ This project offers a fully functional, responsive website for pet adoption, int
 - **API Integration**: Dynamic content fetched from an external API
 - **Design**: Based on the provided Figma design for pixel-perfect implementation
 
-## 🔧 Getting Started
-
-Follow these steps to set up and run the project on your local machine.
-
-### Prerequisites
-
-Ensure you have **Node.js** and **npm** installed.
-
-### Installation
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/your-username/pet-adoption-platform.git
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd pet-adoption-platform
-    ```
-3. Install dependencies:
-    ```bash
-    npm install
-    ```
-4. Start the development server:
-    ```bash
-    npm start
-    ```
-5. Open your browser and visit `http://localhost:3000` to view the website.
 
 ## 🛠️ Features In-Depth
 
