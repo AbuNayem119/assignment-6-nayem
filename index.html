@@ -29,51 +29,54 @@
 <body>
 
 
-    <section class="w-[1600px] mx-auto">
+    <section class="w-[576px] md:w-[1440px] mx-auto">
 
         <!-- Header section start here -->
-        <header class="w-[1320px] mx-auto flex justify-between items-center py-10">
-            <div class="flex gap-4">
-                <img class="w-8 h-8" src="./assets/img/logo.webp" alt="">
-                <h2 class="text-4xl font-extrabold lato">Peddy</h2>
+        <header class="w-[576px] md:w-[1320px] mx-auto flex justify-between items-center py-10">
+            <div class="flex items-center gap-1 md:gap-4 ml-6 md:ml-0">
+                <img class="w-6 h-[6] md:w-8 md:h-8" src="./assets/img/logo.webp" alt="">
+                <h2 class="text-2xl md:text-4xl font-extrabold lato">Peddy</h2>
             </div>
             <div>
-                <ul class="flex gap-8">
-                    <li class="text-xl font-semibold text-[#131313]">Home</li>
-                    <li class="text-xl font-semibold text-[#131313]">Shop</li>
-                    <li class="text-xl font-semibold text-[#131313]">Contact</li>
+                <ul class="flex gap-6 md:gap-8">
+                    <li class="text-lg md:text-xl font-semibold text-[#131313]">Home</li>
+                    <li class="text-lg md:text-xl font-semibold text-[#131313]">Shop</li>
+                    <li class="text-lg md:text-xl font-semibold text-[#131313]">Contact</li>
                 </ul>
             </div>
-            <div class="p-2 rounded-full border border-[#0e7a8133]">
-                <img class="w-[30px] h-[30px]" src="./assets/img/user.png" alt="">
+            <div class="md:mr-0 mr-6 p-2 rounded-full border border-[#0e7a8133]">
+                <img class="w-[20px] h-[20px] md:w-[30px] md:h-[30px]" src="./assets/img/user.png" alt="">
             </div>
         </header>
 
 
         <!-- Banner section here -->
-        <section class="w-[752px] mx-auto flex flex-col gap-10 items-center mt-10">
+        <section class="w-[576px] md:w-[752px] mx-auto flex flex-col gap-10 items-center mt-10">
+        <!-- <section class="w-[752px] mx-auto flex flex-col gap-10 items-center mt-10"> -->
             <div class="flex gap-2 items-center">
-                <p class="text-2xl font-bold lato">Bringing Families Together</p>
+                <p class="text-xl md:text-2xl font-bold lato">Bringing Families Together</p>
                 <img class="w-7" src="./assets/img/campfire.png" alt="">
             </div>
-            <h2 class="text-6xl font-extrabold text-center lato">Your Path to Adoption Starts Here</h2>
-            <p class="text-center text-[20px] lato">Adopting a pet is a rewarding journey, and we’re here to help you every step of the way. Explore our available pets, learn about the process, and start your path to finding a loyal companion who’s waiting for their forever home.</p>
-            <a class=" bg-[#0E7A81] text-xl text-white lato py-4 px-8 rounded-xl lato" href="">View More</a>
+            <h2 class="leading-[60px] md:leading-[70px] md:w-full w-[90%] text-5xl md:text-6xl font-extrabold text-center lato">Your Path to Adoption Starts Here</h2>
+            <p class="text-center md:w-full w-[85%] text-base md:text-[20px] lato">Adopting a pet is a rewarding journey, and we’re here to help you every step of the way. Explore our available pets, learn about the process, and start your path to finding a loyal companion who’s waiting for their forever home.</p>
+            <a class=" bg-[#0E7A81]  md:text-xl text-white lato py-4 px-8 rounded-xl lato" href="">View More</a>
         </section>
 
         <!-- Banner img section here -->
-        <section class="mt-10 w-[1320px] mx-auto">
+        <section class="mt-10 w-[576px] md:w-[1320px] mx-auto">
             <img class="w-[75%] mx-auto" src="./assets/img/pet.webp" alt="">
         </section>
 
         <!-- Pet section here -->
-        <section class="w-[800px] mx-auto flex flex-col gap-6 items-center my-10">
-            <h3 class="text-[40px] font-extrabold lato">Adopt Your Best Friend</h3>
-            <p class="text-center text-[20px] lato mb-5">Adopt a pet and gain a loyal companion for life. Our shelter is filled with loving animals waiting for a forever home. Start your journey today and discover the joy of having a best friend by your side!</p>
+        <section class="w-[576px] md:w-[800px] mx-auto flex flex-col gap-6 items-center my-10">
+        <!-- <section class="w-[800px] mx-auto flex flex-col gap-6 items-center my-10"> -->
+            <h3 class="text-3xl md:text-[40px] font-extrabold lato">Adopt Your Best Friend</h3>
+            <p class="text-center text-base md:w-full w-[85%] md:text-[20px] lato mb-5">Adopt a pet and gain a loyal companion for life. Our shelter is filled with loving animals waiting for a forever home. Start your journey today and discover the joy of having a best friend by your side!</p>
         </section>
 
         <!-- Pet category buttons section here -->
-        <section id="categories-container" class="w-[1320px] mx-auto my-10 flex justify-between">
+        <section id="categories-container" class="w-[576px] md:w-[1320px] mx-auto my-10 md:px-2 px-6 flex justify-between">
+        <!-- <section id="categories-container" class="w-[1320px] mx-auto my-10 flex justify-between"> -->
 
             <!-- <div class="w-1/5">
                     <div onclick="displayCategoryData()" class="flex gap-2 items-center cursor-pointer justify-center p-8 rounded-xl border border-[#0e7a8126]">
@@ -85,13 +88,15 @@
         </section>
 
         <!-- Pet cards top section here -->
-        <section class="w-[1320px] mx-auto flex justify-between items-center my-10">
-            <h4 class="font-bold lato text-2xl text-[#131313]">Best Deal For you</h4>
-            <button id="sortByPrice" class=" bg-[#0E7A81] text-xl text-white lato py-4 px-8 rounded-xl lato">Sort by Price</button>
+        <section class="w-[576px] md:w-[1320px] mx-auto flex justify-between items-center my-5 md:my-10 px-7 md:px-0">
+        <!-- <section class="w-[1320px] mx-auto flex justify-between items-center my-10"> -->
+            <h4 class="font-bold lato text-xl md:text-2xl text-[#131313]">Best Deal For you</h4>
+            <button id="sortByPrice" class=" bg-[#0E7A81] text-xl text-white lato md:py-4 py-2 md:px-8 px-5 rounded-xl lato">Sort by Price</button>
         </section>
 
         <!-- Pet cards section here -->
-        <section class="w-[1320px] mx-auto my-14 flex justify-between gap-5">
+        <section class="w-[576px] md:w-[1320px] mx-auto my-14 px-5 md:px-2 flex justify-between md:gap-5 gap-3">
+        <!-- <section class="w-[1320px] mx-auto my-14 flex justify-between gap-5"> -->
 
             <!-- Loading Spinner -->
             <div class="mx-auto">
@@ -99,7 +104,7 @@
             </div>
 
             <!-- Dynamic Cards Container / Section here -->
-            <div id="cards-container" class="grid grid-cols-3 gap-5 w-3/4">
+            <div id="cards-container" class="grid grid-cols-1 md:grid-cols-3 md:gap-5 gap-3 md:w-3/4 w-4/6">
 
                 <!-- Cards -->
                 <!-- <div class="flex flex-col gap-2 border border-[#0e7a8126] p-4 rounded-xl">
@@ -152,8 +157,8 @@
             </div>
 
             <!-- pet gallery section here  -->
-            <div id="petGallery" class="w-1/4 border border-[#0e7a8126] p-3 rounded-xl">
-                <div id="petGalleryContainer" class="grid grid-cols-2 gap-3">
+            <div id="petGallery" class="md:w-1/4 w-2/6 border border-[#0e7a8126] md:p-3 p-2 rounded-xl">
+                <div id="petGalleryContainer" class="grid md:grid-cols-2 grid-cols-1 md:gap-3 gap-2">
 
                     <!-- <img class="w-full object-cover border border-[#0e7a8126] p-4 rounded-xl" src="./assets/img/pet.webp" alt=""> -->
 
@@ -163,9 +168,10 @@
         </section>
 
         <!-- Footer Section is here -->
-        <footer class="bg-[#2E2E2E] text-white flex justify-between items-start py-[100px] px-[140px]">
+        <footer class="bg-[#2E2E2E] text-white flex md:flex-row flex-col md:w-[1320px] w-[576px] justify-between items-start py-10 md:px-14 px-6 mx-auto">
+        <!-- <footer class="bg-[#2E2E2E] text-white flex justify-between items-start py-[100px] px-[140px]"> -->
             <div>
-                <div class="flex gap-3 my-5">
+                <div class="flex gap-3 mb-4">
                     <img class="w-8 h-8" src="./assets/img/logo.webp" alt="">
                     <h2 class="text-4xl font-extrabold lato">Peddy</h2>
                 </div>
@@ -188,7 +194,7 @@
             </div>
 
             <div>
-                <p class="text-2xl font-bold mb-5">Useful Links</p>
+                <p class="text-2xl font-bold mb-5 md:mt-0 mt-10">Useful Links</p>
                 <ul class="flex flex-col gap-2">
                     <li class="text-xl text-[#ffffff99] lato"><a href="">Home</a></li>
                     <li class="text-xl text-[#ffffff99] lato"><a href="">About Us</a></li>
@@ -198,7 +204,7 @@
                 </ul>
             </div>
 
-            <div class="w-[240px]">
+            <div class="w-[240px] md:mt-0 mt-10">
                 <p class="text-2xl font-bold mb-5">Drop a Message</p>
                 <input type="text" placeholder="Enter your email"
                     class="input input-bordered inter text-base bg-[#1F1F1F] w-full max-w-xs p-7" />

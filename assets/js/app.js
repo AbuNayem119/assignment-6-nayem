@@ -8,7 +8,7 @@ const getCategories = async () => {
     displayCategories(data.categories)
 }
 
-// Display Categories Data 
+// Display Categories Button 
 const displayCategories = async (data) => {
 
     const categoriesContainer = document.getElementById('categories-container');
@@ -23,9 +23,9 @@ const displayCategories = async (data) => {
         categoryDiv.classList = "w-1/5"
 
         categoryDiv.innerHTML = `
-            <div id="pet_${category.id}" onclick="displayCategoryData(${category.id})" class="flex gap-2 items-center cursor-pointer justify-center p-4 rounded-xl border border-[#0e7a8126]">
-                <img src=${category.category_icon} alt="">
-                <h4 id="pet_text_${category.id}" class="font-bold inter text-2xl text-[#131313]">${category.category}</h4>
+            <div id="pet_${category.id}" onclick="displayCategoryData(${category.id})" class="flex gap-2 items-center cursor-pointer justify-center p-2 md:p-4 hover:bg-[#0E7A81] hover:rounded-[50px] group hover:duration-500 rounded-xl border border-[#0e7a8126]">
+                <img class="w-6 h-6 md:w-auto md:h-auto" src=${category.category_icon} alt="">
+                <h4 id="pet_text_${category.id}" class="font-bold inter text-lg md:text-2xl group-hover:text-white text-[#131313]">${category.category}</h4>
             </div>
         `
         categoriesContainer.appendChild(categoryDiv);
@@ -89,7 +89,7 @@ const displayCardData = async (data) => {
         // console.log(pet);
 
         const cardDiv = document.createElement('div');
-        cardDiv.classList = "flex flex-col gap-2 border border-[#0e7a8126] p-4 rounded-xl"
+        cardDiv.classList = "flex flex-col gap-2 border border-[#0e7a8126] md:p-4 p-2 rounded-xl"
         cardDiv.id = "petCardId"
         cardDiv.innerHTML = `
 
@@ -97,8 +97,8 @@ const displayCardData = async (data) => {
             <p class="hidden" id="petIdSort" >${pet.petId}</p>
 
 
-            <div class="border border-[#0e7a8126] p-4 rounded-xl">
-                <img src=${pet.image === '' ? 'https://img.icons8.com/?size=100&id=115242&format=png&color=000000' : pet.image} alt="">
+            <div class="border border-[#0e7a8126] md:p-4 p-2 rounded-xl">
+                <img class="w-full object-cover rounded-xl" src=${pet.image === '' ? 'https://img.icons8.com/?size=100&id=115242&format=png&color=000000' : pet.image} alt="">
             </div>
             <div>
                 <h4 class="font-bold inter text-xl text-[#131313]">${pet.pet_name === '' || pet.pet_name === undefined ? 'Not Available' : pet.pet_name}</h4>
