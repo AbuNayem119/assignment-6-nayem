@@ -5,13 +5,13 @@
 Welcome to the **Pet Adoption Platform**—your one-stop solution to finding and adopting your next furry friend! Browse through dynamic listings, select your favorites, and start the adoption journey, all from a sleek, responsive interface.
 
 ## 🌍 Live Demo
-[Experience it live here](#)
+[Experience it from live](https://abunayem119.github.io/assignment-6-nayem/)
 
 ## 🚀 Project Overview
 
 This project offers a fully functional, responsive website for pet adoption, integrating real-time data from an external API. Users can view pets in different categories, sort them by price, like pets, and adopt them with a fun and interactive process.
 
-### Key Highlights:
+### 🧩 Key Highlights:
 - **Responsive Design**: Optimized for Desktop, Tablet, and Mobile views.
 - **API Integration**: Fetches dynamic content for pet listings.
 - **Sort by Price**: Easily sort pets by price to find your perfect match.
