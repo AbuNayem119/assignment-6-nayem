@@ -1,6 +1,6 @@
 
 
-# 🐶 Pet Adoption Platform
+# 🐶 Pet Adoption Website
 
 Welcome to the **Pet Adoption Platform**—your one-stop solution to finding and adopting your next furry friend! Browse through dynamic listings, select your favorites, and start the adoption journey, all from a sleek, responsive interface.
 
@@ -47,18 +47,4 @@ This project offers a fully functional, responsive website for pet adoption, int
 - **Async/Await**: Handles asynchronous API calls and manages dynamic data fetching.
 - **Template Literals**: Makes it easy to inject API data directly into HTML elements.
 
-## 💡 Want to Contribute?
 
-Contributions are welcome! Feel free to fork the repository and submit a pull request, or open an issue for feedback and suggestions.
-
-## ⚖️ License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-"""
-
-# Saving the alternative content to README.md
-alternative_file_path = "/mnt/data/README_alternative.md"
-with open(alternative_file_path, "w") as file:
-    file.write(alternative_readme_content)
-
-alternative_file_path
