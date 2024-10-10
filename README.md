@@ -44,7 +44,11 @@ This project offers a fully functional, responsive website for pet adoption, int
 ## 💻 ES6 Features
 
 - **Arrow Functions**: Simplifies function declarations.
+- **Promises**: Handle requests to fetch pet data from the API.
 - **Async/Await**: Handles asynchronous API calls and manages dynamic data fetching.
 - **Template Literals**: Makes it easy to inject API data directly into HTML elements.
 
 
+The **Pet Adoption Platform** is a feature-rich, dynamic, and user-friendly web application designed to provide an enjoyable experience for users looking to adopt pets. From browsing available pets, sorting by price, favoriting, and viewing detailed information, to adopting pets with a smooth countdown process, this platform combines intuitive design and functionality. Fully responsive and API-driven, it ensures seamless performance across all devices.
+
+By following the Figma design closely and incorporating best practices in web development, this project delivers a polished and professional solution that makes the pet adoption process interactive and engaging. Feel free to explore, contribute, or adapt the codebase for your own projects!
